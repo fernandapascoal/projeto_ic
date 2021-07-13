@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+li{
+    list-style: none
+}
+
+body{
+    font-family: "Source Sans Pro", monospace;
+    background: url("../img/mybackground.jfif") no-repeat top center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    color: #aeaeae
+}
+
+.container{
+    padding: 0 16px;
+}
+
+.title{
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.photo{
+    max-width: 452px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.box{
+    background: #eee;
+    padding: 4rem;
+    box-shadow; 2px 2px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.photo{
+    margin-top: 4rem;
+}
+
+.photo-pic{
+    border-radius: 50%;
+    margin: 0 auto 2rem auto;
+}
+
+.photo span{
+    font-size: 24px;
+}
+
+.photo p{
+    font-size: 18px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociais li{
+    margin-right: 1rem;
+}
+
+.sobre{
+    max-width: 886px;
+    margin-top: 8rem;
+}
+
+.sobre p{
+    text-align: justify;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.experiencias{
+    max-width: 886px;
+    margin: 8rem 0;
+}
+
+.experiencias ul{
+    margin: 8rem 0;
+}
+
+.experiencias li{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: justify;
+    gap: 1rem;
+    color: #606060
+}
+
+.experiencias li + li{
+    margin-top: 2rem;
+}
+
+.experiencias img{
+    border-radius: 10px;
+}
+
+.experiencias h2{
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.experiencias a{
+    color: #aeaeae;
+    text-decoration: none;
+}
+
+.contatos h2{
+    font-weight: normal;
+    color: #606060;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.redes-sociais2{
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociais2 li{
+    margin-right: 1rem;
+}
+
+.copyright{
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 16px black;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+@media(max-width: 600px){
+    body{
+        background-attachment: initial;
+        background-size: contain;
+        background-color: #f0e6da;
+    }
+    .box{
+        padding: 2rem;
+        margin-top: 4rem;
+        border-radius: 30px;
+    }
+    .box:first-child{
+        padding: 3rem;
+    }
+    .experiencias ul{
+        margin-top: 1rem;
+    }
+    .experiencias li{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .experiencias li div{
+        max-width: 448px;
+    }
+    .copyright{
+        font-size: 18px;
+        color: #606060;
+        text-shadow: none;
+        margin: 0;
+        padding: 4rem 0;
+    }
+}
